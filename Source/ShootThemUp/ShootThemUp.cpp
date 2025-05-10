@@ -1,4 +1,4 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
+// Shoot Them Up Game. All Rights Reserved.
 
 #include "ShootThemUp.h"
 #include "Modules/ModuleManager.h"

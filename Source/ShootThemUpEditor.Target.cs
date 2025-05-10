@@ -1,15 +1,15 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
+// Shoot Them Up Game. All Rights Reserved.
 
 using UnrealBuildTool;
 using System.Collections.Generic;
 
 public class ShootThemUpEditorTarget : TargetRules
 {
-	public ShootThemUpEditorTarget( TargetInfo Target) : base(Target)
+	public ShootThemUpEditorTarget(TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Editor;
 		DefaultBuildSettings = BuildSettingsVersion.V4;
-		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_3;
-		ExtraModuleNames.Add("ShootThemUp");
+
+		ExtraModuleNames.AddRange( new string[] { "ShootThemUp" } );
 	}
 }
