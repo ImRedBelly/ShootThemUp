@@ -6,6 +6,10 @@
 #include "Camera/CameraComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "Components/STUCharacterMovementComponent.h"
+#include "Components/STUHealthComponent.h"
+#include "Components/TextRenderComponent.h"
+
+DEFINE_LOG_CATEGORY_STATIC(LogBaseCharacter, All, All);
 
 // Sets default values
 ASTUBaseCharacter::ASTUBaseCharacter(const FObjectInitializer& ObjectInitializer)
@@ -21,12 +25,27 @@ ASTUBaseCharacter::ASTUBaseCharacter(const FObjectInitializer& ObjectInitializer
     CameraComponent = CreateDefaultSubobject<UCameraComponent>("CameraComponent");
     CameraComponent->SetupAttachment(SpringArmComponent);
 
+    HealthComponent = CreateDefaultSubobject<USTUHealthComponent>("HealthComponent");
+
+    HealthTextComponent = CreateDefaultSubobject<UTextRenderComponent>("HealthTextComponent");
+    HealthTextComponent->SetupAttachment(GetRootComponent());
 }
 
 // Called when the game starts or when spawned
 void ASTUBaseCharacter::BeginPlay()
 {
     Super::BeginPlay();
+
+    check(HealthComponent)
+    check(HealthTextComponent)
+    check(GetCharacterMovement())
+
+    OnHealthChanged(HealthComponent->GetHealth());
+
+    HealthComponent->OnDeath.AddUObject(this, &ASTUBaseCharacter::OnDeath);
+    HealthComponent->OnHealthChanged.AddUObject(this, &ASTUBaseCharacter::OnHealthChanged);
+
+    LandedDelegate.AddDynamic(this, &ASTUBaseCharacter::OnGroundLanded);
 }
 
 // Called every frame
@@ -38,6 +57,9 @@ void ASTUBaseCharacter::Tick(float DeltaTime)
 // Called to bind functionality to input
 void ASTUBaseCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
+    Super::SetupPlayerInputComponent(PlayerInputComponent);
+    check(PlayerInputComponent)
+
     APlayerController* PlayerController = GetWorld()->GetFirstPlayerController();
     ULocalPlayer* LocalPlayer = Cast<ULocalPlayer>(PlayerController->Player);
 
@@ -123,4 +145,40 @@ float ASTUBaseCharacter::GetMovementDirection() const
     const auto Degrees = FMath::RadiansToDegrees(AngelBetween);
 
     return CrossProduct.IsZero() ? Degrees : FMath::RadiansToDegrees(AngelBetween) * FMath::Sign(CrossProduct.Z);
+}
+
+void ASTUBaseCharacter::OnDeath()
+{
+    PlayAnimMontage(DeathAnimMontage);
+
+    GetCharacterMovement()->DisableMovement();
+    SetLifeSpan(LifeSpanOnDeath);
+
+    if (GetController())
+    {
+        GetController()->ChangeState(NAME_Spectating);
+    }
+
+    UE_LOG(LogBaseCharacter, Display, TEXT("Player %s id dead"), *GetName());
+}
+
+void ASTUBaseCharacter::OnHealthChanged(float Health)
+{
+    HealthTextComponent->SetText(FText::FromString(FString::Printf(TEXT("%.0f"), Health)));
+}
+
+void ASTUBaseCharacter::OnGroundLanded(const FHitResult& Hit)
+{
+    const auto FallVelocityZ = -GetVelocity().Z;
+    UE_LOG(LogBaseCharacter, Display, TEXT("On landed: %f"), FallVelocityZ);
+
+    if (FallVelocityZ < LandedDamageVelocity.X)
+    {
+        return;
+    }
+
+    const auto FinalDamage = FMath::GetMappedRangeValueClamped(LandedDamageVelocity, LandedDamage, FallVelocityZ);
+
+    UE_LOG(LogBaseCharacter, Display, TEXT("FinalDamage: %f"), FinalDamage);
+    TakeDamage(FinalDamage, FDamageEvent{}, nullptr, nullptr);
 }

@@ -7,97 +7,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbfdfdf-2ba6-49f3-a4e6-c93eab5b2a3a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.ShootThemUp/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.ShootThemUp/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.ShootThemUp/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor-ShootThemUp.patch_0.exp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor-ShootThemUp.patch_1.exp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor-ShootThemUp.patch_2.exp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Levels/TestLevel.umap" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Levels/TestLevel_HLOD0_Instancing.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/0/N4/USCLUKRZYDXIW588LOSJ5D.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/0/RH/4IX84KIUI57CM4V6V8C3RG.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/0/YO/X0ZNKBUC1BRQD6YFNY4J8T.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/1/1G/4GPR11PBO1I592099OIA4K.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/1/37/0U4085XU3OG9KY7RZQSVR3.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/1/58/W42EUE0BDNYE1M8ALONXZ8.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/1/8P/XDGYG7GJBH9UPEY6O5TEP1.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/1/KF/B6IPPWEA1X3UGH3OK8HGKC.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/1/MF/XDSMEVN1GUFWPETX703C1X.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/1/YR/T6DSP9SNY9698ILNZ8HT1N.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/2/9D/YQSN26MYD76XZYJY8CWN1V.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/3/EP/N3PVJWQ0M3BLCJ5V8ZRS7P.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/3/YR/28DLIVISZ77SVECNN7MQYA.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/4/94/I5GNB2RY1K3GGY7I71QW1D.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/4/B7/M8IUPL3GJB2BJKVQ2UAWIC.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/4/EQ/3E5JJ79EJ9Y3EFMOOKCRJH.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/4/FJ/Y5ZN31HKBXR3JA3C0NGSTK.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/4/PE/EGVPT403T8PLQJ0XTG0D48.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/5/5H/UCNEMVOF5BWWP8TWA7BIDS.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/5/EU/3KIE5MWTE2QS7027FPJTUX.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/5/J1/YI5F4RI43A4I13FD4HFJD5.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/5/NQ/DUAK64DKV3MLCHHP98WMB4.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/5/TY/MC92I1U6FDDI2SH9TAUKDK.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/6/EH/7DJGNR9EO06FO48FOWWRW1.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/6/G1/W41M8T20XPRZDJ9NX2BX88.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/6/GP/NTG3T2G1P0OCK5A41RUJX6.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/6/J4/WXF8QEUX3QL307LKGU0G7I.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/6/U1/9H8N4SII7OR1MOZ81EDI4R.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/7/23/GQBHIIIHOOI3DE3HCRH675.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/7/6K/U9MSCPF2ZBK35A953DB2TC.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/7/PF/5Y2SEKMLPU641LFRYR2GH5.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/8/44/ME5JB8S6MXYK9V1Q2Z35GO.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/8/GA/FHMB3E2CYJ141J6UI1JIIQ.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/8/Z1/WDI98C9PMFATRBNHCRBMMP.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/9/9F/I0WAVYRRS8HLWJUNLL9QEE.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/9/A2/LVCGC49WH3QMJ5FX99P0H7.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/9/UA/PQ8DV5BI4D15R5I5DOJCCD.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/A/LI/EG0AIBUTNI41979HDEGMWW.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/A/U8/168NIAFNGIK9P0TL9WMLJ7.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/A/VN/80038D9SY3LYJWD453J6YU.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/B/2K/FGKW59ZH0X658HAI7DTPVH.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/B/85/03287D4DAEUFHI4G47A3H1.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/B/CN/NMZP0QSYK4D8Y0KMYJ1WRL.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/B/E8/KE2G4RHHJ9SR022YRWWR3P.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/B/GD/9TPNUGINFRYBAPD8MV5399.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/C/8E/7RTZ5JHNM8K22XG4ZSWICV.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/C/A2/PZ23D2J752EXF5VT8FSLYK.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/C/B9/0VYOS4KDWDYJG207QR42Z6.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/C/JD/JGT22HI8U1BQ09J9ARI2SQ.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/C/OK/73R48RCISY96CKLIE6GVVD.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/C/SX/L6J9TR3XTUH4M155KV1YB8.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/C/VP/QRG1XZR4YL3AUFMTEP4P5S.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/D/5B/WZN4UOZ2QLY02SCW4CO6J8.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/D/P1/J0JF21A00QYEOC4EAJIVLC.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/D/PV/X0D2E8CFABOWH7GBWISO2V.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/D/TE/6YINY560R2DU2I23F5VYG9.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/E/8I/0SFDLXRTOEH2ABB0NHUBA0.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/E/HM/0LQ00OJ5OKSPHF1U7XQLPH.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalObjects__/Levels/TestLevel/0/C1/E4SS0P03FOFNM08JM5MJHL.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalObjects__/Levels/TestLevel/7/LM/F6VU9KN2HN9KB23EFVOLIE.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalObjects__/Levels/TestLevel/9/J7/1XZ5Q7HX3IUVJV894WSHXS.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalObjects__/Levels/TestLevel/9/WV/0FD54N08UDALO6XKV0UFB2.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalObjects__/Levels/TestLevel/A/77/FL9BGRDF0FTPCDR9HBBL8T.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalObjects__/Levels/TestLevel/D/DA/W5NYDMJWFGNSFGNFYKEJFK.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Player/STUBaseCharacter.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Player/STUPlayerController.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Player/STUBaseCharacter.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Player/STUPlayerController.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/STUGameModeBase.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/STUGameModeBase.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShootThemUp.dir/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShootThemUp/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEditor.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEditor.ini" afterDir="false" />
+    <list default="true" id="7dbfdfdf-2ba6-49f3-a4e6-c93eab5b2a3a" name="Changes" comment="squash! feat: add character">
+      <change afterPath="$PROJECT_DIR$/Binaries/Win64/ShootThemUp-Win64-Shipping.exp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor-ShootThemUp.patch_3.exp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor-ShootThemUp.patch_4.exp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor-ShootThemUp.patch_5.exp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor-ShootThemUp.patch_6.exp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor-ShootThemUp.patch_7.exp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Components/STUHealthComponent.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Dev/STUDevDamageActor.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Dev/STUFireDamageType.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Dev/STUIceDamageType.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Components/STUHealthComponent.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Dev/STUDevDamageActor.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Dev/STUFireDamageType.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Dev/STUIceDamageType.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShootThemUp.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShootThemUp.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultGame.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGame.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShootThemUp.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/ShootThemUp.uproject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp.Target.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp.Target.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/ShootThemUp.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/ShootThemUp.Build.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/ShootThemUp.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/ShootThemUp.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/ShootThemUp.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/ShootThemUp.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUpEditor.Target.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUpEditor.Target.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Animations/ABP_BaseCharacter.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Animations/BS_Locomotion.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Player/BP_STUBaseCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Player/BP_STUBaseCharacter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/Player/STUBaseCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Player/STUBaseCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/Player/STUBaseCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Player/STUBaseCharacter.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,6 +68,9 @@
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="2wpBjdMinJumsVZbxLlOcE7Ae2I" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -251,8 +185,18 @@
       <workItem from="1746766337691" duration="2338000" />
       <workItem from="1746768836636" duration="121000" />
       <workItem from="1746769245187" duration="1771000" />
-      <workItem from="1746876598964" duration="1945000" />
+      <workItem from="1746876598964" duration="6602000" />
+      <workItem from="1746938890720" duration="9008000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: add character">
+      <option name="closed" value="true" />
+      <created>1746890604242</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1746890604242</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,6 +217,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="feat: add character" />
+    <MESSAGE value="squash! feat: add character" />
+    <option name="LAST_COMMIT_MESSAGE" value="squash! feat: add character" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
