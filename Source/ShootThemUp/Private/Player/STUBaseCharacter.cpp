@@ -3,7 +3,9 @@
 #include "Player/STUBaseCharacter.h"
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
+#include "STUWeaponComponent.h"
 #include "Camera/CameraComponent.h"
+#include "Components/CapsuleComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "Components/STUCharacterMovementComponent.h"
 #include "Components/STUHealthComponent.h"
@@ -21,14 +23,17 @@ ASTUBaseCharacter::ASTUBaseCharacter(const FObjectInitializer& ObjectInitializer
     SpringArmComponent = CreateDefaultSubobject<USpringArmComponent>("SpringArmComponent");
     SpringArmComponent->SetupAttachment(GetRootComponent());
     SpringArmComponent->bUsePawnControlRotation = true;
+    SpringArmComponent->SocketOffset = FVector(0, 100, 80);
 
     CameraComponent = CreateDefaultSubobject<UCameraComponent>("CameraComponent");
     CameraComponent->SetupAttachment(SpringArmComponent);
 
     HealthComponent = CreateDefaultSubobject<USTUHealthComponent>("HealthComponent");
+    WeaponComponent = CreateDefaultSubobject<USTUWeaponComponent>("WeaponComponent");
 
     HealthTextComponent = CreateDefaultSubobject<UTextRenderComponent>("HealthTextComponent");
     HealthTextComponent->SetupAttachment(GetRootComponent());
+    HealthTextComponent->SetOwnerNoSee(true);
 }
 
 // Called when the game starts or when spawned
@@ -58,7 +63,9 @@ void ASTUBaseCharacter::Tick(float DeltaTime)
 void ASTUBaseCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
     Super::SetupPlayerInputComponent(PlayerInputComponent);
+
     check(PlayerInputComponent)
+    check(WeaponComponent)
 
     APlayerController* PlayerController = GetWorld()->GetFirstPlayerController();
     ULocalPlayer* LocalPlayer = Cast<ULocalPlayer>(PlayerController->Player);
@@ -80,13 +87,18 @@ void ASTUBaseCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
         EnhancedInputComponent->BindAction(SprintAction, ETriggerEvent::Started, this, &ASTUBaseCharacter::StartSprint);
         EnhancedInputComponent->BindAction(SprintAction, ETriggerEvent::Completed, this, &ASTUBaseCharacter::StopSprint);
 
+        EnhancedInputComponent->BindAction(FireAction, ETriggerEvent::Started, WeaponComponent, &USTUWeaponComponent::StartFire);
+        EnhancedInputComponent->BindAction(FireAction, ETriggerEvent::Completed, WeaponComponent, &USTUWeaponComponent::StopFire);
+
+        EnhancedInputComponent->BindAction(NextWeaponAction, ETriggerEvent::Triggered, WeaponComponent, &USTUWeaponComponent::NextWeapon);
+        EnhancedInputComponent->BindAction(ReloadAction, ETriggerEvent::Triggered, WeaponComponent, &USTUWeaponComponent::Reload);
     }
 }
 
 void ASTUBaseCharacter::Move(const FInputActionValue& Value)
 {
     FVector2D MovementVector = Value.Get<FVector2D>();
-    IsMovingForward = MovementVector.Y > 0;
+    IsMovingForward = MovementVector.Y > 0 && MovementVector.X == 0;
 
     if (Controller != nullptr)
     {
@@ -158,6 +170,9 @@ void ASTUBaseCharacter::OnDeath()
     {
         GetController()->ChangeState(NAME_Spectating);
     }
+
+    GetCapsuleComponent()->SetCollisionResponseToAllChannels(ECR_Ignore);   
+    WeaponComponent->StopFire();
 
     UE_LOG(LogBaseCharacter, Display, TEXT("Player %s id dead"), *GetName());
 }

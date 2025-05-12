@@ -7,28 +7,64 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbfdfdf-2ba6-49f3-a4e6-c93eab5b2a3a" name="Changes" comment="squash! feat: add character">
-      <change afterPath="$PROJECT_DIR$/Binaries/Win64/ShootThemUp-Win64-Shipping.exp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor-ShootThemUp.patch_3.exp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor-ShootThemUp.patch_4.exp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor-ShootThemUp.patch_5.exp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor-ShootThemUp.patch_6.exp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Binaries/Win64/UnrealEditor-ShootThemUp.patch_7.exp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Components/STUHealthComponent.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Dev/STUDevDamageActor.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Dev/STUFireDamageType.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Dev/STUIceDamageType.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Components/STUHealthComponent.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Dev/STUDevDamageActor.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Dev/STUFireDamageType.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Dev/STUIceDamageType.h" afterDir="false" />
+    <list default="true" id="7dbfdfdf-2ba6-49f3-a4e6-c93eab5b2a3a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Binaries/Win64/ShootThemUp.exp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Build/Windows/Engine/Extras/GPUDumpViewer/GPUDumpViewer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Build/Windows/Engine/Extras/GPUDumpViewer/OpenGPUDumpViewer.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Build/Windows/Engine/Extras/GPUDumpViewer/OpenGPUDumpViewer.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Build/Windows/Manifest_DebugFiles_Win64.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Build/Windows/Manifest_NonUFSFiles_Win64.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Build/Windows/Manifest_UFSFiles_Win64.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Input/Actions/IA_Fire.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Input/Actions/IA_NextWeapon.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Input/Actions/IA_Reload.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Materials/MI_RedColor.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Materials/M_BaseColor.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Meshes/Stairs.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Player/Animations/ABP_BaseCharacter.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Player/Animations/AM_Death.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Player/Animations/AM_Equip.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Player/Animations/AM_LauncherReload.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Player/Animations/AM_RifleReload.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Player/Animations/AO_BaseCharacter.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Player/Animations/BS_Locomotion.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Weapon/BP_STULauncherWeapon.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Weapon/BP_STUProjectile.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Weapon/BP_STURifleWeapon.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/4/UN/WBERI0CIZA4AQMC2BA3AEZ.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/8/33/4SEV9F49CJENAZW8VBI6Q3.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/D/6F/FM1OJF0SEI9LNWTBLOC6P4.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/E/ET/3GYKUTQZYDFAFR2JWCXQEN.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/F/2F/557GZB4FPJG129ZF1Y7YBZ.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Animations/STUAnimNotify.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Animations/STUEquipFinishedAnimNotify.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Animations/STUReloadFinishedAnimNotify.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Components/STUWeaponComponent.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUGameHUD.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Weapon/ASTUProjectile.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Weapon/STUBaseWeapon.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Weapon/STULauncherWeapon.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Weapon/STURifleWeapon.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Animations/AnimUtils.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Animations/STUAnimNotify.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Animations/STUEquipFinishedAnimNotify.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Animations/STUReloadFinishedAnimNotify.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Components/STUWeaponComponent.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/STUCoreTypes.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUGameHUD.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Weapon/ASTUProjectile.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Weapon/STUBaseWeapon.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Weapon/STULauncherWeapon.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Weapon/STURifleWeapon.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShootThemUp.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShootThemUp.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/ABP_BaseCharacter.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/BS_Locomotion.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Input/IMC_Player.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Input/IMC_Player.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Player/BP_STUBaseCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Player/BP_STUBaseCharacter.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/Player/STUBaseCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Player/STUBaseCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/Components/STUHealthComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Components/STUHealthComponent.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/Player/STUBaseCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Player/STUBaseCharacter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/STUGameModeBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/STUGameModeBase.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +122,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -186,7 +222,9 @@
       <workItem from="1746768836636" duration="121000" />
       <workItem from="1746769245187" duration="1771000" />
       <workItem from="1746876598964" duration="6602000" />
-      <workItem from="1746938890720" duration="9008000" />
+      <workItem from="1746938890720" duration="9221000" />
+      <workItem from="1747028702932" duration="23477000" />
+      <workItem from="1747064034290" duration="96000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add character">
       <option name="closed" value="true" />
@@ -196,7 +234,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746890604242</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: add health character">
+      <option name="closed" value="true" />
+      <created>1746961917622</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1746961917622</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,7 +265,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="feat: add character" />
     <MESSAGE value="squash! feat: add character" />
-    <option name="LAST_COMMIT_MESSAGE" value="squash! feat: add character" />
+    <MESSAGE value="feat: add health character" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add health character" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
