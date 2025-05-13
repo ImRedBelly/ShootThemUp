@@ -1,0 +1,18 @@
+﻿#pragma once
+#include "STUUtils.generated.h"
+
+class STUUtils
+{
+public:
+    template <typename T>
+    static T* GetSTUPlayerComponent(APawn* PlayerPawn)
+    {
+        if (IsValid(PlayerPawn))
+        {
+            const auto Component = PlayerPawn->GetComponentByClass(T::StaticClass());
+            return Cast<T>(Component);
+        }
+        
+        return nullptr;
+    }
+};

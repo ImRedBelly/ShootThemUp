@@ -102,12 +102,10 @@ void ASTUBaseWeapon::DecreaseAmmo()
 {
     if (CurrentAmmo.Bullets == 0)
     {
-        UE_LOG(LogBaseWeapon, Display, TEXT("Clip is empty"));
         return;
     }
 
     CurrentAmmo.Bullets--;
-    LogAmmo();
 
     if (!IsAmmoEmpty() && IsClipEmpty())
     {
@@ -132,25 +130,15 @@ void ASTUBaseWeapon::ChangeClip()
     {
         if (CurrentAmmo.Clips == 0)
         {
-            UE_LOG(LogBaseWeapon, Display, TEXT("No more clips"));
             return;
         }
         CurrentAmmo.Clips--;
     }
 
     CurrentAmmo.Bullets = DefaultAmmo.Bullets;
-    UE_LOG(LogBaseWeapon, Display, TEXT("---------Change Clip----------"));
 }
 
 bool ASTUBaseWeapon::CanReload() const
 {
     return CurrentAmmo.Bullets < DefaultAmmo.Bullets && CurrentAmmo.Clips > 0;
-}
-
-void ASTUBaseWeapon::LogAmmo()
-{
-    FString AmmoInfo = "Ammo: " + FString::FromInt(CurrentAmmo.Bullets) + " / ";
-    AmmoInfo += CurrentAmmo.Infinite ? "Infinite" : FString::FromInt(CurrentAmmo.Clips);
-
-    UE_LOG(LogBaseWeapon, Display, TEXT("%s"), *AmmoInfo);
 }
