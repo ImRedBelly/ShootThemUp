@@ -1,5 +1,4 @@
 ﻿#pragma once
-#include "STUUtils.generated.h"
 
 class STUUtils
 {

@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "STUCoreTypes.h"
 #include "Components/ActorComponent.h"
+#include "Pickups/STUAmmoPickup.h"
 #include "Weapon/STUBaseWeapon.h"
 #include "STUWeaponComponent.generated.h"
 
@@ -27,6 +28,7 @@ public:
 
     bool TryGetCurrentWeaponUIData(FWeaponUIData& UIData) const;
     bool TryGetCurrentWeaponAmmoData(FAmmoData& AmmoData) const;
+    bool TryToAddAmmo(TSubclassOf<ASTUBaseWeapon> WeaponType, int32 ClipsAmount);
 
 protected:
     UPROPERTY(EditDefaultsOnly, Category="Weapon")
@@ -72,6 +74,6 @@ private:
     bool CanEquip() const;
     bool CanReload() const;
 
-    void OnEmptyClip();
+    void OnEmptyClip(ASTUBaseWeapon* AmmoEmptyWeapon);
     void ChangeClip();
 };

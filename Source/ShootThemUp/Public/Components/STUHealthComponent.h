@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "STUCoreTypes.h"
 #include "Components/ActorComponent.h"
+#include "Pickups/STUHealthPickup.h"
 #include "STUHealthComponent.generated.h"
 
 
@@ -23,6 +24,9 @@ public:
 
     UFUNCTION(BlueprintCallable, Category="Health")
     float GetHealthPercent() const { return Health / MaxHealth; }
+
+    bool TryToAddHealth(float HealthAmount);
+    bool IsHealthFull() const;
 
     FOnDeathSignature OnDeath;
     FOnHealthChangedSignature OnHealthChanged;
