@@ -55,3 +55,23 @@ bool USTUMainPlayerHUD::IsPlayerSpectating() const
     const auto Controller = GetOwningPlayer();
     return IsValid(Controller) && Controller->GetStateName() == NAME_Spectating;
 }
+
+bool USTUMainPlayerHUD::Initialize()
+{
+    const auto HealthComponent = STUUtils::GetSTUPlayerComponent<USTUHealthComponent>(GetOwningPlayerPawn());
+
+    if (IsValid(HealthComponent))
+    {
+        HealthComponent->OnHealthChanged.AddUObject(this, &USTUMainPlayerHUD::OnHealthChange);
+    }
+
+    return Super::Initialize();
+}
+
+void USTUMainPlayerHUD::OnHealthChange(float Health, float HealthDelta)
+{
+    if (HealthDelta < 0)
+    {
+        OnTakeDamage();
+    }
+}

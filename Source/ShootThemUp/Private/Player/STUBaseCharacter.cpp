@@ -44,8 +44,9 @@ void ASTUBaseCharacter::BeginPlay()
     check(HealthComponent)
     check(HealthTextComponent)
     check(GetCharacterMovement())
+    check(GetMesh())
 
-    OnHealthChanged(HealthComponent->GetHealth());
+    OnHealthChanged(HealthComponent->GetHealth(), 0);
 
     HealthComponent->OnDeath.AddUObject(this, &ASTUBaseCharacter::OnDeath);
     HealthComponent->OnHealthChanged.AddUObject(this, &ASTUBaseCharacter::OnHealthChanged);
@@ -161,7 +162,7 @@ float ASTUBaseCharacter::GetMovementDirection() const
 
 void ASTUBaseCharacter::OnDeath()
 {
-    PlayAnimMontage(DeathAnimMontage);
+    //PlayAnimMontage(DeathAnimMontage);
 
     GetCharacterMovement()->DisableMovement();
     SetLifeSpan(LifeSpanOnDeath);
@@ -174,10 +175,14 @@ void ASTUBaseCharacter::OnDeath()
     GetCapsuleComponent()->SetCollisionResponseToAllChannels(ECR_Ignore);   
     WeaponComponent->StopFire();
 
+    GetMesh()->SetCollisionEnabled(ECollisionEnabled::Type::QueryAndPhysics);
+    GetMesh()->SetSimulatePhysics(true);
+    
+    
     UE_LOG(LogBaseCharacter, Display, TEXT("Player %s id dead"), *GetName());
 }
 
-void ASTUBaseCharacter::OnHealthChanged(float Health)
+void ASTUBaseCharacter::OnHealthChanged(float Health, float HealthDelta)
 {
     HealthTextComponent->SetText(FText::FromString(FString::Printf(TEXT("%.0f"), Health)));
 }

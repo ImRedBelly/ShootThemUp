@@ -104,7 +104,7 @@ private:
     bool WantsToSprint = false;
 
     void OnDeath();
-    void OnHealthChanged(float Health);
+    void OnHealthChanged(float Health, float HealthDelta);
 
 
     UFUNCTION()

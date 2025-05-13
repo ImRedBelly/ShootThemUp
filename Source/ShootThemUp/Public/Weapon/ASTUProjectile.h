@@ -6,6 +6,7 @@
 #include "GameFramework/Actor.h"
 #include "ASTUProjectile.generated.h"
 
+class USTUWeaponFXComponent;
 class UProjectileMovementComponent;
 class USphereComponent;
 
@@ -37,6 +38,9 @@ protected:
 
     UPROPERTY(EditDefaultsOnly, Category="Weapon")
     bool DoFullDamage = false;
+
+    UPROPERTY(VisibleAnywhere, Category="VFX")
+    USTUWeaponFXComponent* WeaponFXComponent;
     
     virtual void BeginPlay() override;
 

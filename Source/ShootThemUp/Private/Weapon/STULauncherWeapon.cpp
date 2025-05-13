@@ -36,6 +36,7 @@ void ASTULauncherWeapon::MakeShoot()
         Projectile->SetShotDirection(Direction);
         Projectile->FinishSpawning(SpawnTransform);
     }
-    
+
     DecreaseAmmo();
+    SpawnMuzzleFX();
 }

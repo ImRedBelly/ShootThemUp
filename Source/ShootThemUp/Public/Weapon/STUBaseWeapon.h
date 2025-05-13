@@ -7,6 +7,8 @@
 #include "GameFramework/Actor.h"
 #include "STUBaseWeapon.generated.h"
 
+class UNiagaraSystem;
+class UNiagaraComponent;
 
 UCLASS()
 class SHOOTTHEMUP_API ASTUBaseWeapon : public AActor
@@ -25,7 +27,7 @@ public:
 
     FWeaponUIData GetUIData() const { return UIData; }
     FAmmoData GetAmmoData() const { return CurrentAmmo; }
-    bool    TryToAddAmmo(int32 ClipsAmount);
+    bool TryToAddAmmo(int32 ClipsAmount);
 
 protected:
     UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Components")
@@ -43,6 +45,10 @@ protected:
     UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category="UI")
     FWeaponUIData UIData;
 
+    UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category="VFX")
+    UNiagaraSystem* MuzzleFX;
+
+
     virtual void BeginPlay() override;
 
     virtual void MakeShoot();
@@ -59,6 +65,8 @@ protected:
     bool IsClipEmpty() const;
     bool IsAmmoFull() const;
 
+    UNiagaraComponent* SpawnMuzzleFX();
+    
 private:
     FAmmoData CurrentAmmo;
 };
