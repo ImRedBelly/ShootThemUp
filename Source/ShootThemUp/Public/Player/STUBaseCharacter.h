@@ -52,6 +52,7 @@ protected:
     FVector2D LandedDamage = FVector2D(10.0f, 100.0f);
 
     virtual void BeginPlay() override;
+    virtual void OnDeath();
 
 public:
     virtual void Tick(float DeltaTime) override;
@@ -103,7 +104,6 @@ private:
     bool IsMovingForward = false;
     bool WantsToSprint = false;
 
-    void OnDeath();
     void OnHealthChanged(float Health, float HealthDelta);
 
 

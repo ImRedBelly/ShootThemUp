@@ -7,37 +7,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dbfdfdf-2ba6-49f3-a4e6-c93eab5b2a3a" name="Changes" comment="feat: add pickups">
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Weapon/Components/STUWeaponFXComponent.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Weapon/Components/STUWeaponFXComponent.h" afterDir="false" />
+    <list default="true" id="7dbfdfdf-2ba6-49f3-a4e6-c93eab5b2a3a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/AI/STUAICharacter.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/AI/STUAIController.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/AI/STUAICharacter.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/AI/STUAIController.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShootThemUp.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShootThemUp.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/Windows/Manifest_DebugFiles_Win64.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Build/Windows/Manifest_DebugFiles_Win64.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/Windows/Manifest_NonUFSFiles_Win64.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Build/Windows/Manifest_NonUFSFiles_Win64.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/Windows/Manifest_UFSFiles_Win64.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Build/Windows/Manifest_UFSFiles_Win64.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BP_STUGameModeBase.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BP_STUGameModeBase.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Player/Animations/ABP_BaseCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Player/Animations/ABP_BaseCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Player/BP_STUBaseCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Player/BP_STUBaseCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Player/BP_STUPlayerController.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Player/BP_STUPlayerController.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/UI/WBP_MainPlayerHUD.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/WBP_MainPlayerHUD.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapon/BP_STULauncherWeapon.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Weapon/BP_STULauncherWeapon.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapon/BP_STUProjectile.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Weapon/BP_STUProjectile.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Weapon/BP_STURifleWeapon.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Weapon/BP_STURifleWeapon.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/9/DD/TBR6T25QVNIP9EUAOQXTLD.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/9/DD/TBR6T25QVNIP9EUAOQXTLD.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/9/UA/PQ8DV5BI4D15R5I5DOJCCD.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/9/UA/PQ8DV5BI4D15R5I5DOJCCD.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/Components/STUHealthComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Components/STUHealthComponent.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/Player/STUBaseCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Player/STUBaseCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUMainPlayerHUD.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUMainPlayerHUD.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/Weapon/ASTUProjectile.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Weapon/ASTUProjectile.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/Weapon/STUBaseWeapon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Weapon/STUBaseWeapon.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/Weapon/STULauncherWeapon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Weapon/STULauncherWeapon.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/Weapon/STURifleWeapon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Weapon/STURifleWeapon.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/Components/STUHealthComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Components/STUHealthComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/Player/STUBaseCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Player/STUBaseCharacter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/STUCoreTypes.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/STUCoreTypes.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUMainPlayerHUD.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUMainPlayerHUD.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/Weapon/ASTUProjectile.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Weapon/ASTUProjectile.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/Weapon/STUBaseWeapon.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Weapon/STUBaseWeapon.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/Weapon/STURifleWeapon.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Weapon/STURifleWeapon.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/ShootThemUp.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/ShootThemUp.Build.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -205,7 +180,8 @@
       <workItem from="1747028702932" duration="23477000" />
       <workItem from="1747064034290" duration="897000" />
       <workItem from="1747117273781" duration="2221000" />
-      <workItem from="1747119728878" duration="22795000" />
+      <workItem from="1747119728878" duration="22911000" />
+      <workItem from="1747210942319" duration="918000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add character">
       <option name="closed" value="true" />
@@ -247,7 +223,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747131354611</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat: add VFX">
+      <option name="closed" value="true" />
+      <created>1747150406689</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1747150406689</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,7 +258,8 @@
     <MESSAGE value="feat: add weapons" />
     <MESSAGE value="feat: add user widget" />
     <MESSAGE value="feat: add pickups" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add pickups" />
+    <MESSAGE value="feat: add VFX" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add VFX" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -32,37 +32,33 @@ void ASTURifleWeapon::BeginPlay()
 
 void ASTURifleWeapon::MakeShoot()
 {
-    if (GetWorld() && !IsAmmoEmpty())
-    {
-        const auto Controller = GetPlayerController();
-        if (!IsValid(Controller)) return;
-
-        FVector TraceStart, TraceEnd;
-        if (!GetTraceData(TraceStart, TraceEnd))
-        {
-            StopFire();
-            return;
-        }
-
-        FHitResult HitResult;
-        MakeHit(HitResult, TraceStart, TraceEnd);
-
-        FVector TraceEndFX = TraceEnd;
-
-        if (HitResult.bBlockingHit)
-        {
-            TraceEndFX = HitResult.ImpactPoint;
-            MakeDamage(HitResult);
-            WeaponFXComponent->PlayImpactFX(HitResult);
-        }
-
-        DecreaseAmmo();
-        SpawnTraceFX(GetMuzzleWorldLocation(), TraceEndFX);
-    }
-    else
+    if (!GetWorld() || IsAmmoEmpty())
     {
         StopFire();
+        return;
     }
+
+    FVector TraceStart, TraceEnd;
+    if (!GetTraceData(TraceStart, TraceEnd))
+    {
+        StopFire();
+        return;
+    }
+
+    FHitResult HitResult;
+    MakeHit(HitResult, TraceStart, TraceEnd);
+
+    FVector TraceEndFX = TraceEnd;
+
+    if (HitResult.bBlockingHit)
+    {
+        TraceEndFX = HitResult.ImpactPoint;
+        MakeDamage(HitResult);
+        WeaponFXComponent->PlayImpactFX(HitResult);
+    }
+
+    DecreaseAmmo();
+    SpawnTraceFX(GetMuzzleWorldLocation(), TraceEndFX);
 }
 
 
