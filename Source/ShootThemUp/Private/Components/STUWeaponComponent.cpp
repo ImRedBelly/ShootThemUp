@@ -82,6 +82,18 @@ bool USTUWeaponComponent::TryToAddAmmo(TSubclassOf<ASTUBaseWeapon> WeaponType, i
     return false;
 }
 
+bool USTUWeaponComponent::NeedAmmo(TSubclassOf<ASTUBaseWeapon> WeaponType)
+{
+    for (auto Weapon : Weapons)
+    {
+        if (IsValid(Weapon) && Weapon->IsA(WeaponType))
+        {
+            return !Weapon->IsAmmoFull();
+        }
+    }
+    return false;
+}
+
 void USTUWeaponComponent::BeginPlay()
 {
     Super::BeginPlay();
