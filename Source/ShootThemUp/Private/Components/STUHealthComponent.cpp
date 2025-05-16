@@ -2,6 +2,8 @@
 
 #include "Components/STUHealthComponent.h"
 
+#include "ShootThemUp/STUGameModeBase.h"
+
 DEFINE_LOG_CATEGORY_STATIC(LogHealthComponent, All, All)
 
 USTUHealthComponent::USTUHealthComponent()
@@ -55,6 +57,7 @@ void USTUHealthComponent::OnTakeAnyDamage(AActor* DamagedActor, float Damage, co
 
     if (IsDead())
     {
+        Killed(InstigatedBy);
         OnDeath.Broadcast();
     }
     else if (AutoHeal)
@@ -100,5 +103,18 @@ void USTUHealthComponent::PlayCameraShake()
         {
             Controller->PlayerCameraManager->StartCameraShake(CameraShakeClass);
         }
+    }
+}
+
+void USTUHealthComponent::Killed(AController* KillerController)
+{
+    if (!GetWorld()) return;
+    const auto GameMode = Cast<ASTUGameModeBase>(GetWorld()->GetAuthGameMode());
+
+    if (IsValid(GameMode))
+    {
+        const auto Player = Cast<APawn>(GetOwner());
+        const auto VictimController = IsValid(Player) ? Player->Controller : nullptr;
+        GameMode->Killed(KillerController, VictimController);
     }
 }

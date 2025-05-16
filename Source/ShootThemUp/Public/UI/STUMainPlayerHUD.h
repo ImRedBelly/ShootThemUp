@@ -39,4 +39,6 @@ public:
 private:
     UFUNCTION()
     void OnHealthChange(float Health, float HealthDelta);
+
+    void OnNewPawn(APawn* NewPawn);
 };

@@ -53,15 +53,6 @@ bool ASTUBaseWeapon::GetTraceData(FVector& TraceStart, FVector& TraceEnd) const
     return true;
 }
 
-APlayerController* ASTUBaseWeapon::GetPlayerController()
-{
-    const auto Player = Cast<ACharacter>(GetOwner());
-    if (!IsValid(Player)) return nullptr;
-
-    return Player->GetController<APlayerController>();
-}
-
-
 bool ASTUBaseWeapon::GetPlayerViewPoint(FVector& ViewLocation, FRotator& ViewRotation) const
 {
     const auto STUCharacter = Cast<ACharacter>(GetOwner());

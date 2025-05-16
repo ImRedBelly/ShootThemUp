@@ -7,13 +7,7 @@
 #include "STUBaseCharacter.generated.h"
 
 class USTUWeaponComponent;
-class UTextRenderComponent;
 class USTUHealthComponent;
-class USpringArmComponent;
-class UInputMappingContext;
-struct FInputActionValue;
-class UInputAction;
-class UCameraComponent;
 
 UCLASS()
 class SHOOTTHEMUP_API ASTUBaseCharacter : public ACharacter
@@ -23,18 +17,19 @@ class SHOOTTHEMUP_API ASTUBaseCharacter : public ACharacter
 public:
     ASTUBaseCharacter(const FObjectInitializer& ObjectInitializer);
 
+    virtual void Tick(float DeltaTime) override;
+
+    UFUNCTION(BlueprintCallable, Category="Movement")
+    virtual bool IsRunning() const;
+
+    UFUNCTION(BlueprintCallable, Category="Movement")
+    float GetMovementDirection() const;
+
+    void SetPlayerColor(const FLinearColor& Color);
+
 protected:
     UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Components")
-    UCameraComponent* CameraComponent;
-
-    UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Components")
-    USpringArmComponent* SpringArmComponent;
-
-    UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Components")
     USTUHealthComponent* HealthComponent;
-
-    UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Components")
-    UTextRenderComponent* HealthTextComponent;
 
     UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Components")
     USTUWeaponComponent* WeaponComponent;
@@ -51,61 +46,17 @@ protected:
     UPROPERTY(EditDefaultsOnly, Category="Damage")
     FVector2D LandedDamage = FVector2D(10.0f, 100.0f);
 
+    UPROPERTY(EditDefaultsOnly, Category="Material")
+    FName MaterialColorName = "Paint Color";
+
     virtual void BeginPlay() override;
     virtual void OnDeath();
-
-public:
-    virtual void Tick(float DeltaTime) override;
-
-    virtual void SetupPlayerInputComponent(UInputComponent* PlayerInputComponent) override;
-
-
-    UFUNCTION(BlueprintCallable, Category="Movement")
-    bool IsRunning() const;
-    UFUNCTION(BlueprintCallable, Category="Movement")
-    float GetMovementDirection() const;
-
-protected:
-    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input)
-    UInputMappingContext* DefaultMappingContext;
-
-    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess = "true"))
-    UInputAction* MoveAction;
-
-    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
-    UInputAction* LookAction;
-
-    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess = "true"))
-    UInputAction* JumpAction;
-
-    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess = "true"))
-    UInputAction* SprintAction;
-
-    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess = "true"))
-    UInputAction* FireAction;
-
-    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess = "true"))
-    UInputAction* NextWeaponAction;
-
-    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess = "true"))
-    UInputAction* ReloadAction;
-
-
-    void Move(const FInputActionValue& Value);
-    void Look(const FInputActionValue& Value);
 
     void OnStartJump();
     void OnStopJump();
 
-    void StartSprint();
-    void StopSprint();
-
 private:
-    bool IsMovingForward = false;
-    bool WantsToSprint = false;
-
     void OnHealthChanged(float Health, float HealthDelta);
-
 
     UFUNCTION()
     void OnGroundLanded(const FHitResult& Hit);
