@@ -35,15 +35,7 @@ void ASTUPlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInput
 
     check(PlayerInputComponent)
     check(WeaponComponent)
-
-    APlayerController* PlayerController = GetWorld()->GetFirstPlayerController();
-    ULocalPlayer* LocalPlayer = Cast<ULocalPlayer>(PlayerController->Player);
-
-    if (UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(LocalPlayer))
-    {
-        Subsystem->AddMappingContext(DefaultMappingContext, 0);
-    }
-
+    
     if (UEnhancedInputComponent* EnhancedInputComponent = Cast<UEnhancedInputComponent>(PlayerInputComponent))
     {
         EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Triggered, this, &ASTUPlayerCharacter::Move);

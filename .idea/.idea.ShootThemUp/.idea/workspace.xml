@@ -11,47 +11,63 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3c76f56-1fce-4bad-a0fc-ce41b5a75dc6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Content/Player/BP_STUPlayerCharacter.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/UI/WBP_GameData.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/UI/WBP_Spectator.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/8/HD/IW4DANHSRSVLJLMJP027ZO.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/A/QV/I0OWLK6F6NWSMJVJ1NPHF1.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/E/YS/TKJT0JGQB1LSE598ZLKWD9.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Components/STURespawnComponent.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Player/STUPlayerCharacter.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Player/STUPlayerState.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUGameDataWidget.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUSpectatorWidget.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Components/STURespawnComponent.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Player/STUPlayerCharacter.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Player/STUPlayerState.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUGameDataWidget.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUSpectatorWidget.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Menu/STULevelItemWidget.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Menu/STUMenuGameModeBase.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Menu/STUMenuHUD.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Menu/STUMenuPlayerController.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Menu/STUMenuWidget.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/STUGameInstance.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUBaseWidget.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUGameOverWidget.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUGoToMenuWidget.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUHealthBarWidget.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUPauseWidget.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUPlayerStateRowWidget.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Menu/STULevelItemWidget.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Menu/STUMenuGameModeBase.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Menu/STUMenuHUD.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Menu/STUMenuPlayerController.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Menu/STUMenuWidget.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/STUGameInstance.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUGameOverWidget.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUGoToMenuWidget.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUHealthBarWidget.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUPauseWidget.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUPlayerStateRowWidget.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShootThemUp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShootThemUp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/Windows/Manifest_DebugFiles_Win64.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Build/Windows/Manifest_DebugFiles_Win64.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/Windows/Manifest_NonUFSFiles_Win64.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Build/Windows/Manifest_NonUFSFiles_Win64.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/Windows/Manifest_UFSFiles_Win64.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Build/Windows/Manifest_UFSFiles_Win64.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/AI/BP_STUAICharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/BP_STUAICharacter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/AI/BT_STUCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/AI/BT_STUCharacter.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/BP_STUGameModeBase.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BP_STUGameModeBase.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Player/BP_STUBaseCharacter.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Input/IMC_Player.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Input/IMC_Player.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Player/BP_STUPlayerController.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Player/BP_STUPlayerController.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UI/WBP_GameData.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/WBP_GameData.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UI/WBP_GameHUD.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/WBP_GameHUD.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/UI/WBP_MainPlayerHUD.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/WBP_MainPlayerHUD.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/UI/WBP_SpectatorHUD.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/9/QC/MFOYMKAXFJWP9TT0GKWOSS.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/AI/Components/STUAIPerceptionComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/AI/Components/STUAIPerceptionComponent.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UI/WBP_Spectator.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/WBP_Spectator.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/VFX/Projectile/NE_Smoke.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VFX/Projectile/NE_Smoke.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Weapon/BP_STULauncherWeapon.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Weapon/BP_STULauncherWeapon.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Weapon/BP_STURifleWeapon.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Weapon/BP_STURifleWeapon.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/7/IA/N7U0DAD4FM0LHLMVYVKQ8S.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/7/IA/N7U0DAD4FM0LHLMVYVKQ8S.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/9/DD/TBR6T25QVNIP9EUAOQXTLD.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/Levels/TestLevel/9/DD/TBR6T25QVNIP9EUAOQXTLD.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/AI/STUAICharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/AI/STUAICharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/AI/STUAIController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/AI/STUAIController.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/Components/STUHealthComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Components/STUHealthComponent.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/Player/STUBaseCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Player/STUBaseCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/Player/STUPlayerCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Player/STUPlayerCharacter.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/Player/STUPlayerController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Player/STUPlayerController.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUGameDataWidget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUGameDataWidget.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUGameHUD.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUGameHUD.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUMainPlayerHUD.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/UI/STUMainPlayerHUD.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/Weapon/STUBaseWeapon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Weapon/STUBaseWeapon.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Private/Weapon/STURifleWeapon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Private/Weapon/STURifleWeapon.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/AI/STUAIController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/AI/STUAIController.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/Components/STUHealthComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Components/STUHealthComponent.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/AI/STUAICharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/AI/STUAICharacter.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/Player/STUBaseCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Player/STUBaseCharacter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/Player/STUPlayerCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Player/STUPlayerCharacter.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/Player/STUPlayerController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Player/STUPlayerController.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/STUCoreTypes.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/STUCoreTypes.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/STUUtils.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/STUUtils.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUGameDataWidget.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUGameDataWidget.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUGameHUD.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUGameHUD.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUMainPlayerHUD.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/UI/STUMainPlayerHUD.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/Weapon/STUBaseWeapon.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Weapon/STUBaseWeapon.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Public/Weapon/STURifleWeapon.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Public/Weapon/STURifleWeapon.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/STUGameModeBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/STUGameModeBase.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/STUGameModeBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/STUGameModeBase.h" afterDir="false" />
     </list>
@@ -81,6 +97,7 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../../Engine/UE_5.3/Engine/Source/Runtime/Core/Public/UObject/UnrealNames.inl" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/ShootThemUp/Private/AI/Components/STUAIPerceptionComponent.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/ShootThemUp/Private/AI/STUAICharacter.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/ShootThemUp/Public/AI/Components/STUAIPerceptionComponent.h" root0="FORCE_HIGHLIGHTING" />
@@ -254,7 +271,13 @@
       <workItem from="1747292861198" duration="4734000" />
       <workItem from="1747302266727" duration="4517000" />
       <workItem from="1747310492121" duration="5101000" />
-      <workItem from="1747365675810" duration="9846000" />
+      <workItem from="1747365675810" duration="10249000" />
+      <workItem from="1747544054892" duration="4540000" />
+      <workItem from="1747551819409" duration="3827000" />
+      <workItem from="1747572499317" duration="631000" />
+      <workItem from="1747573589307" duration="2663000" />
+      <workItem from="1747630615304" duration="9792000" />
+      <workItem from="1747656333674" duration="2327000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add AI">
       <option name="closed" value="true" />
@@ -272,7 +295,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747298131812</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: add custom GameMode">
+      <option name="closed" value="true" />
+      <created>1747391319893</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1747391319893</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,11 +311,23 @@
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="feat: add AI" />
     <MESSAGE value="feat: add use EQS" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add use EQS" />
+    <MESSAGE value="feat: add custom GameMode" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add custom GameMode" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

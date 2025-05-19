@@ -26,8 +26,10 @@ public:
 
             return IsValid(PlayerState1) && IsValid(PlayerState2) &&
                    PlayerState1->GetTeamID() != PlayerState2->GetTeamID();
-        }   
+        }
 
         return false;
     }
+
+    static FText TextFromInt(int32 Number) { return FText::FromString(FString::FromInt(Number)); }
 };

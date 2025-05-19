@@ -54,10 +54,9 @@ protected:
 
     void OnStartJump();
     void OnStopJump();
+    virtual void OnHealthChanged(float Health, float HealthDelta);
 
 private:
-    void OnHealthChanged(float Health, float HealthDelta);
-
     UFUNCTION()
     void OnGroundLanded(const FHitResult& Hit);
 

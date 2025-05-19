@@ -9,7 +9,6 @@
 class USphereComponent;
 class USpringArmComponent;
 class UCameraComponent;
-class UInputMappingContext;
 struct FInputActionValue;
 class UInputAction;
 
@@ -34,9 +33,6 @@ protected:
 
     UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Components")
     USphereComponent* CameraCollisionComponent;
-
-    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input)
-    UInputMappingContext* DefaultMappingContext;
 
     UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess = "true"))
     UInputAction* MoveAction;
