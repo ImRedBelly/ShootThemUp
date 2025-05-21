@@ -9,6 +9,7 @@
 #include "Components/HorizontalBox.h"
 #include "Kismet/GameplayStatics.h"
 #include "Menu/STULevelItemWidget.h"
+#include "Sound/SoundCue.h"
 
 void USTUMenuWidget::NativeOnInitialized()
 {
@@ -30,12 +31,12 @@ void USTUMenuWidget::OnAnimationFinished_Implementation(const UWidgetAnimation* 
 {
     Super::OnAnimationFinished_Implementation(Animation);
     FString Output = "";
-    for(int32 i = 0; i < 4; ++i) 
+    for (int32 i = 0; i < 4; ++i)
     {
         Output.Append(FString::ChrN(2, i % 2 ? '1' : '2'));
     }
     UE_LOG(LogTemp, Error, TEXT("%s"), *Output);
-  
+
     if (Animation == HideAnimation)
     {
         const auto STUGameInstance = GetSTUGameInstance();
@@ -54,6 +55,7 @@ void USTUMenuWidget::OnStartGame()
     if (IsValid(HideAnimation))
     {
         PlayAnimation(HideAnimation);
+        UGameplayStatics::PlaySound2D(GetWorld(), StartGameSound);
     }
 }
 
