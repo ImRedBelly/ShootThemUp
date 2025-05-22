@@ -55,6 +55,9 @@ protected:
     UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess = "true"))
     UInputAction* ReloadAction;
 
+    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess = "true"))
+    UInputAction* ZoomAction;
+
     virtual void BeginPlay() override;
     virtual void OnDeath() override;
 

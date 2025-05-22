@@ -52,7 +52,7 @@ void USTUMenuWidget::OnAnimationFinished_Implementation(const UWidgetAnimation* 
 
 void USTUMenuWidget::OnStartGame()
 {
-    if (IsValid(HideAnimation))
+        if (IsValid(HideAnimation))
     {
         PlayAnimation(HideAnimation);
         UGameplayStatics::PlaySound2D(GetWorld(), StartGameSound);

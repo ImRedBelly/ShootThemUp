@@ -19,6 +19,8 @@ public:
     ASTUBaseCharacter(const FObjectInitializer& ObjectInitializer);
 
     virtual void Tick(float DeltaTime) override;
+    virtual void TornOff() override;
+    virtual void Reset() override;
 
     UFUNCTION(BlueprintCallable, Category="Movement")
     virtual bool IsRunning() const;

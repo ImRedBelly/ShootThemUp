@@ -35,7 +35,7 @@ void ASTUPlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInput
 
     check(PlayerInputComponent)
     check(WeaponComponent)
-    
+
     if (UEnhancedInputComponent* EnhancedInputComponent = Cast<UEnhancedInputComponent>(PlayerInputComponent))
     {
         EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Triggered, this, &ASTUPlayerCharacter::Move);
@@ -53,6 +53,9 @@ void ASTUPlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInput
 
         EnhancedInputComponent->BindAction(NextWeaponAction, ETriggerEvent::Triggered, WeaponComponent, &USTUWeaponComponent::NextWeapon);
         EnhancedInputComponent->BindAction(ReloadAction, ETriggerEvent::Triggered, WeaponComponent, &USTUWeaponComponent::Reload);
+        
+        EnhancedInputComponent->BindAction(ZoomAction, ETriggerEvent::Started, WeaponComponent, &USTUWeaponComponent::StartZoom);
+        EnhancedInputComponent->BindAction(ZoomAction, ETriggerEvent::Completed, WeaponComponent, &USTUWeaponComponent::StopZoom);
     }
 }
 

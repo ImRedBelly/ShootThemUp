@@ -6,6 +6,7 @@
 #include "NiagaraComponent.h"
 #include "NiagaraFunctionLibrary.h"
 #include "Components/AudioComponent.h"
+#include "Engine/DamageEvents.h"
 #include "Kismet/GameplayStatics.h"
 #include "Sound/SoundCue.h"
 
@@ -25,6 +26,21 @@ void ASTURifleWeapon::StopFire()
 {
     GetWorldTimerManager().ClearTimer(ShotTimerHandler);
     SetFXActive(false);
+}
+
+void ASTURifleWeapon::Zoom(bool Enable)
+{
+    const auto Controller = Cast<APlayerController>(GetController());
+
+    if (IsValid(Controller) && IsValid(Controller->PlayerCameraManager))
+    {
+        if (Enable)
+        {
+            DefaultCameraFOV = Controller->PlayerCameraManager->GetFOVAngle();
+        }
+
+        Controller->PlayerCameraManager->SetFOV(Enable ? FOVZoomAngle : DefaultCameraFOV);
+    }
 }
 
 void ASTURifleWeapon::BeginPlay()
@@ -70,7 +86,10 @@ void ASTURifleWeapon::MakeDamage(const FHitResult& HitResult)
     const auto DamageActor = HitResult.GetActor();
     if (IsValid(DamageActor))
     {
-        DamageActor->TakeDamage(DamageAmount, FDamageEvent{}, GetController(), this);
+        FPointDamageEvent PointDamageEvent;
+        PointDamageEvent.HitInfo = HitResult;
+        
+        DamageActor->TakeDamage(DamageAmount,PointDamageEvent, GetController(), this);
     }
 }
 

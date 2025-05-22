@@ -5,6 +5,7 @@
 #include "Components/CapsuleComponent.h"
 #include "Components/STUCharacterMovementComponent.h"
 #include "Components/STUHealthComponent.h"
+#include "Engine/DamageEvents.h"
 #include "Kismet/GameplayStatics.h"
 #include "Sound/SoundCue.h"
 
@@ -38,6 +39,20 @@ void ASTUBaseCharacter::BeginPlay()
 void ASTUBaseCharacter::Tick(float DeltaTime)
 {
     Super::Tick(DeltaTime);
+}
+
+void ASTUBaseCharacter::TornOff()
+{
+    WeaponComponent->StopFire();
+    WeaponComponent->StopZoom();
+    Super::TornOff();
+}
+
+void ASTUBaseCharacter::Reset()
+{
+    WeaponComponent->StopFire();
+    WeaponComponent->StopZoom();
+    Super::Reset();
 }
 
 void ASTUBaseCharacter::OnStartJump()
@@ -86,6 +101,7 @@ void ASTUBaseCharacter::OnDeath()
 
     GetCapsuleComponent()->SetCollisionResponseToAllChannels(ECR_Ignore);
     WeaponComponent->StopFire();
+    WeaponComponent->StopZoom();
 
     GetMesh()->SetCollisionEnabled(ECollisionEnabled::Type::QueryAndPhysics);
     GetMesh()->SetSimulatePhysics(true);
@@ -99,15 +115,10 @@ void ASTUBaseCharacter::OnHealthChanged(float Health, float HealthDelta)
 void ASTUBaseCharacter::OnGroundLanded(const FHitResult& Hit)
 {
     const auto FallVelocityZ = -GetVelocity().Z;
-    UE_LOG(LogBaseCharacter, Display, TEXT("On landed: %f"), FallVelocityZ);
+    if (FallVelocityZ < LandedDamageVelocity.X) return;
 
-    if (FallVelocityZ < LandedDamageVelocity.X)
-    {
-        return;
-    }
+    const auto FallDamage = FMath::GetMappedRangeValueClamped(LandedDamageVelocity, LandedDamage, FallVelocityZ);
+    TakeDamage(FallDamage, FPointDamageEvent{}, nullptr, nullptr);
 
-    const auto FinalDamage = FMath::GetMappedRangeValueClamped(LandedDamageVelocity, LandedDamage, FallVelocityZ);
-
-    UE_LOG(LogBaseCharacter, Display, TEXT("FinalDamage: %f"), FinalDamage);
-    TakeDamage(FinalDamage, FDamageEvent{}, nullptr, nullptr);
+    UE_LOG(LogBaseCharacter, Display, TEXT("Player %s recived landed damage: %f"), *GetName(), FallDamage);
 }

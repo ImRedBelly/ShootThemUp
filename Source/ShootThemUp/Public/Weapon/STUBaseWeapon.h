@@ -28,10 +28,12 @@ public:
 
     FWeaponUIData GetUIData() const { return UIData; }
     FAmmoData GetAmmoData() const { return CurrentAmmo; }
-    
+
     bool TryToAddAmmo(int32 ClipsAmount);
     bool IsAmmoEmpty() const;
     bool IsAmmoFull() const;
+
+    virtual void Zoom(bool Enable){}
 
 protected:
     UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Components")
@@ -51,10 +53,10 @@ protected:
 
     UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category="VFX")
     UNiagaraSystem* MuzzleFX;
-    
+
     UPROPERTY(EditDefaultsOnly, Category="Sound")
     USoundCue* FireSound;
-    
+
     virtual void BeginPlay() override;
 
     virtual void MakeShoot();
@@ -69,7 +71,7 @@ protected:
     bool IsClipEmpty() const;
 
     UNiagaraComponent* SpawnMuzzleFX();
-    
+
 private:
     FAmmoData CurrentAmmo;
 };
