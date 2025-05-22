@@ -1,8 +1,0 @@
-ShootThemUp/Binaries/Win64/ShootThemUp.pdb	2025-05-22T07:07:40.965Z
-ShootThemUp/Binaries/Win64/tbb.pdb	2024-04-13T05:11:11.831Z
-ShootThemUp/Binaries/Win64/tbbmalloc.pdb	2024-04-13T05:11:11.833Z
-Engine/Content/SlateDebug/Fonts/LastResort.tps	2024-04-13T05:13:36.670Z
-Engine/Content/SlateDebug/Fonts/LastResort.ttf	2024-04-13T05:13:38.110Z
-Engine/Extras/GPUDumpViewer/GPUDumpViewer.html	2024-04-13T05:17:23.650Z
-Engine/Extras/GPUDumpViewer/OpenGPUDumpViewer.bat	2024-04-13T05:17:23.652Z
-Engine/Extras/GPUDumpViewer/OpenGPUDumpViewer.sh	2024-04-13T05:17:23.652Z
